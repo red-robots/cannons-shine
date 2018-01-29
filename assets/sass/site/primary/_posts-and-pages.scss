@@ -1,0 +1,338 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+.top-bar {
+	width: 100%;
+	height: 20px;
+	background-color: $color-orange;
+	float: left;
+	@media screen and (min-width: $tabwidth) {
+	
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+}
+.top-dash {
+	width: 100%;
+	float: left;
+	height: 10px;
+	position: relative;
+	z-index: 6;
+	border: {
+		bottom: 1px dashed $color-blue;
+	}
+}
+.bottom-dash {
+	width: 100%;
+	float: left;
+	height: 10px;
+	position: relative;
+	z-index: 5;
+	border: {
+		top: 1px dashed $color-blue;
+	}
+	@media screen and (min-width: $tabwidth) {
+	
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+}
+.top-left-col {
+	width: 100%;
+	float: left;
+	@media screen and (min-width: $tabwidth) {
+		margin: 0 0 0 15%;
+		float: left;
+		// margin: 0 0 0 0%;
+		width: 300px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		margin: 0 0 0 16%;
+	}
+}
+.bottle-banner-mobile {
+	width: 50%;
+	margin: 0 auto;
+	@media screen and (min-width: $tabwidth) {
+		display: none;
+	}
+}
+.bottle-banner {
+	display: none;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 200px;
+		height: 488px;
+		position: absolute;
+		right: 5%;
+		top: 0;
+		z-index: 5000;
+		display: block;
+	}
+	@media screen and (min-width: $midwidth) {
+		width: 280px;
+		height: 627px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 357px;
+		height: 800px;
+	}
+}
+.cbutton-wrapper {
+	width: 80%;
+	margin: 50px auto 20px auto;
+	clear: both;
+	position: relative;
+	z-index: 6000;
+	border: {
+		radius: 5px;
+	}
+	padding: 5px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	@media screen and (min-width: $tabwidth) {
+		
+		width: 280px;
+		float: left;
+		margin: 20px 0 0 0%;
+
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 400px;
+		margin: 0 0 -90px 0;
+	}
+	@include transition(all ease .3s);
+	&:hover {
+		-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,1);
+	box-shadow: 0px 0px 12px 0px rgba(0,0,0,1);
+	}
+	.cbutton {
+		
+		font: {
+			family: $font-san;
+			size: 20px;
+		}
+		text-align: center;
+		a {
+			color: #fff;
+			text-decoration: none;
+			display: block;
+			padding: 5px;
+			color: #fff;
+			border: {
+				radius: 5px;
+			}
+			@include transition(all ease .3s);
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff864f+0,ffcf41+100 */
+			background: #ff864f; /* Old browsers */
+			background: -moz-linear-gradient(top, #ff864f 0%, #ffcf41 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, #ff864f 0%,#ffcf41 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, #ff864f 0%,#ffcf41 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff864f', endColorstr='#ffcf41',GradientType=0 ); /* IE6-9 */
+			&:hover {
+				background: -moz-linear-gradient(top, #ffcf41 0%, #ff864f 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top, #ffcf41 0%,#ff864f 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom, #ffcf41 0%,#ff864f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcf41', endColorstr='#ff864f',GradientType=0 ); /* IE6-9 */
+			}
+
+		}
+	}
+	
+}
+.left-col {
+	width: 100%;
+	float: left;
+	@media screen and (min-width: $tabwidth) {
+		width: 45%;
+		margin: 0 0 0 7%;
+	}
+	@media screen and (min-width: $midwidth) {
+		width: 55%;
+		margin: 0 0 0 7%;
+	}
+	@media screen and (min-width: $deskwidth) {
+		margin: 0 0 0 5%;
+	}
+}
+.right-col {
+	width: 100%;
+	float: right;
+	@media screen and (min-width: $tabwidth) {
+		width: 200px;
+		margin: 0px 3% 0 0;
+	}
+	@media screen and (min-width: $midwidth) {
+		width: 280px;
+		margin: 50px 3% 0 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 357px;
+		margin: 210px 0 0 0;
+	}
+}
+.disclaimer-wrap {
+	width: 100%;
+	float: left;
+	padding: 5px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	margin: 0 0 30px 0;
+	text-align: center;
+}
+.disclaimer {
+	width: 100%;
+	border: 1px dashed $color-orange;
+	padding: 5px;
+	color: $color-orange;
+	@media screen and (min-width: $tabwidth) {
+		padding: 5px 20px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+}
+.cannon-content {
+	color: #fff;
+	font: {
+		family: $font-shcool;
+	}
+	img {
+		width: 100%;
+	}
+	@media screen and (min-width: $tabwidth) {
+
+	}
+	@media screen and (min-width: $midwidth) {
+		img {
+			width: auto;
+		}
+	}
+	@media screen and (min-width: $deskwidth) {
+
+	}
+}
+.top-tri {
+	width: 100%;
+	position: absolute;
+	bottom: -200px;
+	left: 0;
+	height: 280px;
+	img {
+		width: 100%;
+	}
+	@media screen and (min-width: $tabwidth) {
+		bottom: -150px;
+	}
+	@media screen and (min-width: $midwidth) {
+		bottom: -80px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		bottom: -20px;
+	}
+}
+.bottom-tri {
+	width: 100%;
+	position: absolute;
+	bottom: 200px;
+	left: 0;
+	height: 280px;
+	img {
+		width: 100%;
+	}
+	@media screen and (min-width: $tabwidth) {
+		bottom: 150px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		bottom: 80px;
+	}
+}
+.detail-wrap {
+	width: 90%;
+	margin: 0 auto 20px auto;
+	background-color: $color-green;
+	padding: 5px;
+	.detail {
+		width: 100%;
+		padding: 10px 0;
+		border: 1px dashed $color-blue;
+
+		
+		color: $color-blue;
+		text-align: center;
+	}
+}
+section.foundat {
+	clear: both;
+	width: 100%;
+	padding: 50px 0;
+	position: relative;
+	z-index: 100;
+	background-color: #fff;
+	h2	{
+		color: $color-orange;
+		width: 100%;
+		position: relative;
+		text-align: center;
+		margin: 0 0 30px 0;
+		&:after {
+			width: 20%;
+		    content: '';
+		    border-bottom: 2px solid $color-orange;
+		    position: absolute;
+		    bottom: -10px;
+		    left: 40%;
+		}
+	}
+	.locations {
+		width: 70%;
+		margin: 30px auto;
+		
+		@media screen and (min-width: $tabwidth) {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.location {
+			width: 100%;
+			img {
+				width: 100%;
+			}
+			@media screen and (min-width: $tabwidth) {
+				width: 28%;
+			}
+		}
+	}
+}

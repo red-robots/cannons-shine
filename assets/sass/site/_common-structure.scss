@@ -1,0 +1,136 @@
+* { -webkit-hyphens: none; }
+div {
+	/* These are technically the same, but use both */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	-ms-word-break: break-all;
+	/* This is the dangerous one in WebKit, as it breaks things wherever */
+	word-break: break-all;
+	/* Instead use this non-standard one: */
+	word-break: break-word;
+
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+.clear {clear: both;}
+.wrapper {
+	width: 100%;
+	margin: 0px auto;
+	padding: 20px;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 100%;
+		padding: 20px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 90%;
+		padding: 0px;
+	}
+}
+header#masthead {
+	float: left;
+	width: 100%;
+	padding: 50px 0;
+}
+.content-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 66%;
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+
+.widget-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 26%;
+		float: right;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+
+/* Logo */
+.logo , h1.logo {
+	width: 280px;
+	margin: 10px auto;
+	img {
+		width: 100%;
+		float: left;
+	}
+	overflow: hidden;
+	@media screen and (min-width: $tabwidth) {
+		width: 300px;
+		float: left;
+		// margin: 0 0 60px 40px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 400px;
+		margin: 0 0 60px 0px;
+	}
+}
+.logo a, h1.logo a {
+	width: 280px;
+	display: block;
+	text-indent: -9000px;
+
+	@media screen and (min-width: $tabwidth) {
+		width: 300px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 400px;
+	}
+}
+#primary {
+	width: 100%;
+	float: left;
+	position: relative;
+	padding: 80px 0 300px 0;
+	clear: both;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff864f+0,ffcf41+100 */
+		background: #ff864f; /* Old browsers */
+		background: -moz-linear-gradient(top, #ff864f 0%, #ffcf41 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #ff864f 0%,#ffcf41 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #ff864f 0%,#ffcf41 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff864f', endColorstr='#ffcf41',GradientType=0 ); /* IE6-9 */
+		
+}
+footer.site-footer {
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	float: left;
+	padding: 50px 0;
+	background: -moz-linear-gradient(top, #ffcf41 0%, #ff864f 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top, #ffcf41 0%,#ff864f 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom, #ffcf41 0%,#ff864f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcf41', endColorstr='#ff864f',GradientType=0 ); /* IE6-9 */
+	@media screen and (min-width: $tabwidth) {
+		padding: 50px 0 0 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		padding: 0px 0 0 0;
+	}
+	.footer-logo {
+		width: 200px;
+		float: right;
+		margin: 150px 0 50px 0;
+		img {
+			width: 100%;
+		}
+	}
+}
