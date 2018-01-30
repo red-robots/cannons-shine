@@ -1236,7 +1236,7 @@ optgroup{font-weight:bold}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 button:focus{outline:0}
-body,button,input,select,textarea{color:#404040;font-family:sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
+body,button,input,select,textarea{color:#404040;font-family:"Raleway",sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
 h1,h2,h3,h4,h5,h6{clear:both}
 .entry-content h1{font-size:30px}
 p{margin-bottom:1.5em}
@@ -1447,9 +1447,10 @@ footer.site-footer .footer-logo img{width:100%}
 }@media screen and (min-width:900px){.right-col{width:280px;margin:50px 3% 0 0}
 }@media screen and (min-width:1200px){.right-col{width:357px;margin:210px 0 0 0}
 }.disclaimer-wrap{width:100%;float:left;padding:5px;background-color:#fff;box-shadow:0 0 12px 0 rgba(0,0,0,0.75);margin:0 0 30px 0;text-align:center}
-.disclaimer{width:100%;border:1px dashed #ff864f;padding:5px;color:#ff864f}
+.disclaimer{width:100%;border:1px dashed #ff864f;padding:5px;color:#ff864f;font-family:'Raleway',sans-serif;font-size:18px}
 @media screen and (min-width:600px){.disclaimer{padding:5px 20px}
-}.cannon-content{color:#fff;font-family:"Schoolbell",cursive}
+}.cannon-content{color:#fff}
+.cannon-content p{font-family:"Schoolbell",cursive;font-size:18px;line-height:2}
 .cannon-content img{width:100%}
 @media screen and (min-width:900px){.cannon-content img{width:auto}
 }.top-tri{width:100%;position:absolute;bottom:-200px;left:0;height:280px}
@@ -1462,7 +1463,7 @@ footer.site-footer .footer-logo img{width:100%}
 @media screen and (min-width:600px){.bottom-tri{bottom:150px}
 }@media screen and (min-width:1200px){.bottom-tri{bottom:80px}
 }.detail-wrap{width:90%;margin:0 auto 20px auto;background-color:#87e146;padding:5px}
-.detail-wrap .detail{width:100%;padding:10px 0;border:1px dashed #11497a;color:#11497a;text-align:center}
+.detail-wrap .detail{width:100%;padding:10px 0;border:1px dashed #11497a;font-family:'Raleway',sans-serif;font-size:18px;color:#11497a;text-align:center}
 section.foundat{clear:both;width:100%;padding:50px 0;position:relative;z-index:100;background-color:#fff}
 section.foundat h2{color:#ff864f;width:100%;position:relative;text-align:center;margin:0 0 30px 0}
 section.foundat h2:after{width:20%;content:'';border-bottom:2px solid #ff864f;position:absolute;bottom:-10px;left:40%}

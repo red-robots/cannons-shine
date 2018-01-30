@@ -26,6 +26,7 @@ get_header(); ?>
 			$disclaimer = get_field('disclaimer');
 			$cannons_bio = get_field('cannons_bio');
 			$locations_title = get_field('locations_title');
+			
 		 
 		 ?>
 
@@ -81,7 +82,7 @@ get_header(); ?>
 				<?php if(have_rows('locations')) : while(have_rows('locations')) : the_row(); 
 
 				$logo = get_sub_field('logo');
-				$link = get_sub_field('link');
+				$link = get_sub_field('location_link');
 
 				// echo '<pre>';
 				// print_r($logo);
@@ -90,7 +91,7 @@ get_header(); ?>
 				?>
 
 				<div class="location">
-					<a href="<?php echo $link; ?>">
+					<a href="<?php echo $link; ?>" target="_blank">
 					<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
 					</a>
 				</div>

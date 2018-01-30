@@ -217,6 +217,8 @@
 	border: 1px dashed $color-orange;
 	padding: 5px;
 	color: $color-orange;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
 	@media screen and (min-width: $tabwidth) {
 		padding: 5px 20px;
 	}
@@ -226,9 +228,14 @@
 }
 .cannon-content {
 	color: #fff;
-	font: {
-		family: $font-shcool;
+	p {
+		font: {
+			family: $font-shcool;
+			size: 18px;
+		}
+		line-height: 2;
 	}
+	
 	img {
 		width: 100%;
 	}
@@ -288,8 +295,8 @@
 		width: 100%;
 		padding: 10px 0;
 		border: 1px dashed $color-blue;
-
-		
+		font-family: 'Raleway', sans-serif;
+		font-size: 18px;
 		color: $color-blue;
 		text-align: center;
 	}

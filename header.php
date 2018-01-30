@@ -28,6 +28,8 @@ setup_postdata( $post );
 	$disclaimer = get_field('disclaimer');
 	$cannons_bio = get_field('cannons_bio');
 	$locations_title = get_field('locations_title');
+	$email = get_field('email');
+	$antispam = antispambot($email);
  
 wp_reset_postdata();
 
@@ -59,7 +61,7 @@ wp_reset_postdata();
 
 	        <div class="cbutton-wrapper">
 	        	<div class="cbutton">
-	        		<a href="">
+	        		<a href="<?php echo 'mailto:'.$antispam; ?>">
 	        			<?php echo $contact_button_text; ?>
 	        		</a>
 	        	</div>
