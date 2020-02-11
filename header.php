@@ -21,7 +21,7 @@
 
 
 // specific post ID you want to pull
-$post = get_post(2); 
+$post = get_post(10); 
 setup_postdata( $post );
  
 	$contact_button_text = get_field('contact_button_text');
